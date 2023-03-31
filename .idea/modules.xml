@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sobot_Sdk_Demo_Android_V6.iml" filepath="$PROJECT_DIR$/.idea/modules/Sobot_Sdk_Demo_Android_V6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdk-mall-x/Sobot_Sdk_Demo_Android_V6.sobotsdk-mall-x.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_Sdk_Demo_Android_V6.sobotsdkdemo.unitTest.iml" />
+    </modules>
+  </component>
+</project>

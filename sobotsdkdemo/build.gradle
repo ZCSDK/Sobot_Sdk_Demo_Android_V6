@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    // 签名配置
+    signingConfigs {
+
+        debug {
+            storeFile file("./keystore/debug.keystore")
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.sobot.demo"
+        minSdkVersion 17
+        targetSdkVersion 33
+        versionCode 39
+        versionName "4.0.3"
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'arm64-v8a', 'armeabi-v7a', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    compileOptions.encoding = "UTF-8"
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    //--------------智齿相关依赖 start-----------
+    implementation project(':sobotsdk-mall-x')
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
+    //目前支持常⻅的3种图片加载库，必须在下面的图片加载库中选择一个添加依赖
+    // compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    // compile 'com.squareup.picasso:picasso:2.5.2'
+//    implementation  'com.sobot.chat:sobotsdk-mall-x:3.0.4'
+    implementation('com.github.bumptech.glide:glide:4.9.0')
+    implementation 'com.sobot.chat:sobotsupport-glidev4:2.1'
+
+//    implementation 'com.facebook.fresco:fresco:2.6.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //--------------智齿相关依赖 end-----------
+
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.1'
+    implementation  'com.umeng.umsdk:common:9.4.4'
+    implementation  'com.umeng.umsdk:asms:1.4.1'
+    implementation 'com.umeng.umsdk:apm:1.5.2'
+    implementation 'com.alibaba:fastjson:1.2.73'
+    //AlphaIndicatorView
+    implementation('com.lzy.widget:view-core:0.1.5') {
+        exclude group: 'com.android.support'
+    }
+}
