@@ -35,6 +35,15 @@
         android:layout_marginBottom="10dp"
         android:background="@color/sobot_common_gray1" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="6dp"
+        android:textColor="@color/sobot_common_red"
+        android:text="注意：每次初始化都会清理其它功能的配置，所以其它配置方法需要在初始化之后再设置才生效！"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/sobot_tv_init"
