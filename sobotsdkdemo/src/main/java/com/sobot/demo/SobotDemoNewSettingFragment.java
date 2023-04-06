@@ -66,6 +66,11 @@ public class SobotDemoNewSettingFragment extends Fragment implements View.OnClic
         rl_4.setOnClickListener(this);
         RelativeLayout rl_5 = (RelativeLayout) view.findViewById(R.id.rl_5);
         rl_5.setOnClickListener(this);
+        if (SobotVerControl.isPlatformVer) {
+            rl_5.setVisibility(View.VISIBLE);
+        } else {
+            rl_5.setVisibility(View.GONE);
+        }
         RelativeLayout rl_6 = (RelativeLayout) view.findViewById(R.id.rl_6);
         rl_6.setOnClickListener(this);
         RelativeLayout rl_7 = (RelativeLayout) view.findViewById(R.id.rl_7);
